@@ -1,0 +1,55 @@
+.main
+	padding-top: 65px
+	padding-bottom: 60px
+	background: #373737 url(../img/main/main-bg.jpg) center no-repeat
+	background-size: cover
+	color: $text-color-light
+	
+	/* Оформление главной картинки */
+	&-img
+		position: relative
+		opacity: 0
+		img
+			max-width: 130%
+			transform: translateX(-25%)
+
+	/* Заголовок */
+	&-text
+		&__title
+			margin-bottom: 20px
+			font-size: 41px
+			font-weight: 700
+		&__subtitle
+			margin-bottom: 27px
+			font-size: 28px
+			font-weight: 300
+		&__form
+			background-color: rgba(#fff, 0.2)
+			padding: 30px 27px
+.form
+	display: flex
+	margin-bottom: 12px
+	// justify-content: space-between
+	&-title
+		margin-bottom: 20px
+		padding-right: 40px
+		font-size: 20px
+		font-weight: 300
+		line-height: 30px
+		&__important
+			display: block
+			font-weight: 700
+			text-transform: uppercase
+	&__input
+		margin-right: 10px
+		font-size: 14px
+		padding: 20px
+		border-radius: 4px
+		border: none
+		flex-basis: 65%
+	&-small
+		padding-left: 19px
+		font-size: 14px
+		font-weight: 300
+
+

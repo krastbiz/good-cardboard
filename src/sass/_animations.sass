@@ -1,0 +1,38 @@
+@keyframes fadeInUpAndFlipInX
+  /* fadeInUp */
+  0%
+    opacity: 0
+    -webkit-transform: translate3d(0%, 100px, 0)
+    transform: translate3d(0%, 100px, 0)
+  40%
+    opacity: 1
+    -webkit-transform: translate3d(0%, 0, 0)
+    transform: translate3d(0%, 0, 0)
+
+  /* flipInX animation */
+  60%
+    transform: translateX(0%) perspective(400px) rotate3d(0, 1, 0, 90deg)
+    animation-timing-function: ease-in
+
+  70%
+    transform: translateX(0%) perspective(400px) rotate3d(0, 1, 0, -20deg)
+    animation-timing-function: ease-in
+
+  80%
+    transform: translateX(0%) perspective(400px) rotate3d(0, 1, 0, 10deg)
+
+  90%
+    transform: translateX(0%) perspective(400px) rotate3d(0, 1, 0, -5deg)
+
+  100%
+    transform: translateX(0%) perspective(400px)
+    opacity: 1
+
+.animate
+  animation-name: fadeInUpAndFlipInX
+
+  animation-duration: 1s
+
+  animation-delay: 0.4s
+
+  animation-fill-mode: forwards
